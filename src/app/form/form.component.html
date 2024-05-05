@@ -1,0 +1,56 @@
+<!-- form.component.html -->
+<div class="bs-component m-5">
+    <div class="card mb-3">
+      <h3 class="card-header">The Application Form</h3>
+      <div class="card-body">
+        <h5 class="card-title">Fill the form with the suitable information for a smoother process!</h5>
+        <h6 class="card-subtitle text-muted">We'll never share your email with anyone else.</h6>
+        <form (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+          </div>
+  
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+          </div>
+  
+          <div class="form-group">
+            <label for="salary">Salary</label>
+            <input type="number" class="form-control" id="salary" placeholder="Enter salary">
+          </div>
+  
+          <div class="form-group">
+            <label for="financialSituation">Financial Situation</label>
+            <input type="text" class="form-control" id="financialSituation" placeholder="Enter financial situation">
+          </div>
+  
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" class="form-control" id="age" placeholder="Enter age">
+          </div>
+  
+          <div class="input-group mt-4 mb-3">
+            <span class="input-group-text">Loan Amount</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">.00</span>
+          </div>
+  
+          <div class="form-group">
+            <label for="loanDuration">Loan Duration</label>
+            <input type="number" class="form-control" id="loanDuration" placeholder="Enter loan Duration">
+          </div>
+  
+          <div class="form-group">
+            <label for="loanPurpose" class="form-label mt-4">Loan Purpose</label>
+            <textarea class="form-control" id="loanPurpose" rows="3"></textarea>
+          </div>
+  
+          <!-- Submission button -->
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
